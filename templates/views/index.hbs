@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>{{title}}</title>
+</head>
+<body>
+  {{>header}}
+
+  <center style="margin: 3rem 0 3rem 0;">
+    <form>
+      <input 
+        type="text"
+        placeholder="Location/address"
+      >
+      <button>Search</button>
+    </form>
+
+    <div class="loader" id="loader"></div>
+
+    <p id="locationElement"></p>
+    <p id="forecastElement"></p>
+    <p id="errorMessageElement"></p>
+  </center>
+
+  {{>footer}}
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
